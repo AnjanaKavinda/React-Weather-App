@@ -58,7 +58,7 @@ function App() {
             <Moment className="date" format="LL">{dateNow}</Moment>
           </div>
           <div className="weather-box">
-            <div className="temp">{weather.app_temp}</div>
+            <div className="temp">{weather.app_temp}°C</div>
             <div className="weather">{{...weather.weather}.description}</div>
           </div>
         </div> 
