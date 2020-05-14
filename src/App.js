@@ -52,7 +52,7 @@ function App() {
 
   
   const dateNow = Date();
-  
+  const iconurl = `https://www.weatherbit.io/static/img/icons/${{...weather.weather}.icon}.png`;
   return (
     <div className="App">
       <main>
@@ -78,7 +78,12 @@ function App() {
             <Moment className="date" format="LL">{dateNow}</Moment>
           </div>
           <div className="weather-box">
-            <div className="temp">{weather.temp}°C</div>
+            <div className="temp">
+              {weather.temp}°C
+              <div className="icon-div">
+              <img src={iconurl} alt="icon" className="icon-class"/>
+              </div>
+            </div>
             <div className="weather">{{...weather.weather}.description}</div>
           </div>
         </div> 

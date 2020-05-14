@@ -130,3 +130,11 @@ text-align: center;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+.icon-div{
+  height: 100px;
+}
+
+.icon-class{
+  width: 100px;
+  height: 90px;
+}
