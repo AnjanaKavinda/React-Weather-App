@@ -18,7 +18,7 @@ function App() {
       .then(result =>{ 
         setweather(...result.data);
         setQuary('');
-        
+        console.log(...result.data)
       })
       .catch((error) => {
         console.error('Error:', error);
@@ -32,7 +32,7 @@ function App() {
     .then(result =>{ 
       setweather(...result.data);
       setQuary('');
-      
+      console.log(...result.data)
     })
     .catch((error) => {
       console.error('Error:', error);
@@ -78,7 +78,7 @@ function App() {
             <Moment className="date" format="LL">{dateNow}</Moment>
           </div>
           <div className="weather-box">
-            <div className="temp">{weather.app_temp}°C</div>
+            <div className="temp">{weather.temp}°C</div>
             <div className="weather">{{...weather.weather}.description}</div>
           </div>
         </div> 
