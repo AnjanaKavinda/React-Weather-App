@@ -44,7 +44,6 @@ function App() {
     .then(result =>{ 
       setweather(...result.data);
       setQuary('');
-      console.log("OK");
     })
     .catch((error) => {
       console.error('Error:', error);
