@@ -25,6 +25,19 @@ function App() {
       });
     }
   };
+
+  const searchButtonPress = () =>{
+    fetch(`${api.base}current?city=${query}&key=${api.key}`)
+    .then(res => res.json())
+    .then(result =>{ 
+      setweather(...result.data);
+      setQuary('');
+      
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  };
   useEffect(() => {
     fetch(`${api.base}current?city=Colombo&key=${api.key}`)
     .then(res => res.json())
@@ -53,6 +66,14 @@ function App() {
             value={query}
             onKeyPress={search}
           />
+          <div className="search-button-box">
+            <button 
+            className="search-button"
+            onClick={() => searchButtonPress()}
+            >
+            Search
+          </button>
+          </div>
           <div className="location-box">
             <div className="location">{weather.city_name}</div>
             <Moment className="date" format="LL">{dateNow}</Moment>
