@@ -144,7 +144,7 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
   const api = {
-    key: "xxxxxxxxxxxxxxxxxxxxxxx",
+    key: "e0b3d83f5334432ea6f5522dac4052da",
     base: "https://api.weatherbit.io/v2.0/"
 
   };
