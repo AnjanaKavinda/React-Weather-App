@@ -2,6 +2,7 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  height: 97vh;
 }
 
 .App-logo {
@@ -41,15 +42,13 @@
 }
 
 .search-box {
-  height: 100vh;
+  height: auto;
   width: 400px;
   background-color: bisque;
-  background-image: url('./asset/background.jpg');
 }
 
 .search-bar {
   margin-top: 20px;
-  width: 80%;
   height: 40px;
   border-radius: 0px 0px 16px 16px;
  color: #fff;
@@ -58,9 +57,7 @@
   background: none;
   border: none;
   outline: none;
-  background-color: rgba(245, 245, 239, 0.363);
   font-size: 18px;
-  box-shadow: 0px 5px rgba(223, 223, 217, 0.548);
 }
 .location-box .location{
   color: rgb(255, 255, 255);
@@ -69,9 +66,7 @@
   text-align: center;
   
 }
-.location{
 
-}
 .date{
   color: rgb(245, 245, 245);
   font-size: 30px;
@@ -95,10 +90,10 @@ text-align: center;
   box-shadow: 3px 6px rgb(172, 168, 163);
 }
 .weather{
-  color: #fff;
-  font-size: 48px;
+  
+  font-size: 30px;
   font-weight: 700;
-  text-shadow: 3px 3px rgb(172, 168, 163);
+  text-shadow: 1px 1px rgb(24, 13, 1);
 }
 
 ::placeholder {
@@ -137,4 +132,194 @@ text-align: center;
 .icon-class{
   width: 100px;
   height: 90px;
+}
+
+.media{
+  height: 100px;
+  width:100px;
+  padding: 10px;
+  margin: 0 !important;
+}
+.card-root{
+  
+ 
+  background-image: url('./asset/background.jpg');
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.Card-content{
+  padding: 10px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+.paper{
+  margin: 10px;
+  height: auto;
+  display: flex;
+    
+}
+.paper-body{
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.212) !important;
+  
+  font-size: 60px;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.Card-headder{
+  color: rgba(255, 255, 255, 0.596) !important;
+}
+.vertical-icon{
+  background-color: #fff !important;
+  color: #fff !important;
+}
+.main-body{
+  width: 400px;
+  height: 97vh;
+}
+
+.Typography-text{
+  color: #fff;
+  text-align: left;
+}
+
+.topic{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 200px;
+}
+
+.search-input{
+  width: 75%;
+  color: #fff !important;
+}
+.city-text{
+  font-size: 35px !important;
+  font-weight: 500;
+  margin-bottom: 5px !important;
+}
+.date-text{
+  margin-bottom: 5px !important;
+  font-size: 20px !important;
+}
+.item-body{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  overflow-y: scroll;
+  max-height: 42%;
+  margin-bottom: 5px;
+}
+.item-body::-webkit-scrollbar {
+  display: none;
+}
+.item-content{
+  margin-bottom: 5px;
+}
+.classes-content{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.253) !important;
+}
+.classes-control-1{
+  margin: 3px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex: 1;
+  
+}
+.MuiPaper-root{
+  background-color: rgba(255, 255, 255, 0.253) !important;
+}
+.classes-control-media{
+  height: 50px;
+  width:50px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.MuiCardContent-root:last-child{
+  
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.icondiv-style{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.Thunderstorm-with-light-rain
+{
+  background-image: url('./asset/Thunderstorm-with-ain.jpg');
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.Light-Drizzle
+{
+  background-image: url('./asset/rain.jpg');
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.Light-snow
+{
+  background-image: url('./asset/Snow.jpg');
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+.Freezing-Fog{
+  background-image: url('./asset/misty.jpg');
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.Clear-sky{
+  background-image: url('./asset/clear-sky.jpg');
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+.Overcast-clouds
+{
+  background-image: url('./asset/cloud.jpg');
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+.display-off{
+display: none !important;
+}
+.error-text{
+  color: red;
+  font-size: 20px !important;
 }
