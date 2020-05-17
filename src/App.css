@@ -147,6 +147,7 @@ text-align: center;
   margin-bottom: 10px;
   margin-top: 10px;
   transition: 0.4 ease;
+  overflow-y: scroll !important;
 }
 .Card-content{
   padding: 0 !important;
@@ -184,6 +185,7 @@ text-align: center;
 .main-body{
   width: 400px;
   height: 97vh;
+ 
 }
 
 .Typography-text{
@@ -215,11 +217,15 @@ text-align: center;
   flex-direction: column;
   align-content: center;
   overflow-y: scroll;
-  max-height: 42%;
+  max-height: 95%;
   margin-bottom: 5px;
 }
+
 .item-body::-webkit-scrollbar {
   display: none;
+}
+.MuiCollapse-wrapperInner{
+  height: 300px;
 }
 .item-content{
   margin-bottom: 5px;
@@ -268,6 +274,7 @@ text-align: center;
   margin-bottom: 10px;
   margin-top: 10px;
   transition: 0.4 ease;
+  overflow-y: scroll !important;
 }
 
 .Light-Drizzle
@@ -278,6 +285,7 @@ text-align: center;
   margin-bottom: 10px;
   margin-top: 10px;
   transition: 0.4 ease;
+  overflow-y: scroll !important;
 }
 
 .Light-snow
@@ -288,6 +296,7 @@ text-align: center;
   margin-bottom: 10px;
   margin-top: 10px;
   transition: 0.4 ease;
+  overflow-y: scroll !important;
 }
 
 
@@ -298,6 +307,7 @@ text-align: center;
   margin-bottom: 10px;
   margin-top: 10px;
   transition: 0.4 ease;
+  overflow-y: scroll !important;
 }
 
 .Clear-sky{
@@ -307,8 +317,8 @@ text-align: center;
   margin-bottom: 10px;
   margin-top: 10px;
   transition: 0.4 ease;
+  overflow-y: scroll !important;
 }
-
 
 .Overcast-clouds
 {
@@ -318,8 +328,30 @@ text-align: center;
   margin-bottom: 10px;
   margin-top: 10px;
   transition: 0.4 ease;
+  overflow-y: scroll !important;
 }
 
+.Clear-sky::-webkit-scrollbar {
+  display: none;
+}
+.Overcast-clouds::-webkit-scrollbar {
+  display: none;
+}
+.Freezing-Fog::-webkit-scrollbar {
+  display: none;
+}
+.Light-snow::-webkit-scrollbar {
+  display: none;
+}
+.Light-Drizzle::-webkit-scrollbar {
+  display: none;
+}
+.Thunderstorm-with-light-rain::-webkit-scrollbar {
+  display: none;
+}
+.card-root::-webkit-scrollbar {
+  display: none;
+}
 
 .display-off{
 display: none !important;
@@ -328,4 +360,7 @@ display: none !important;
   color: red;
   font-size: 20px !important;
   transition: 0.4 ease;
+}
+.MuiCollapse-entered{
+  height: 300px !important;
 }
